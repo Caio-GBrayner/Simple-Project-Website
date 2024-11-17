@@ -7,60 +7,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
     <link rel="stylesheet" href="CSS/style.css">
 </head>
 <body>
     <div class="container">
-    <!--Main header-->
+        <!-- Main header -->
+        <header class="main-header">
+            <!-- Logo holder -->
+            <div class="logo-holder">
+                <a href="#">
+                    <img src="img/" alt="Logo">
+                </a>
+            </div>
+            <!-- Search holder -->
+            <div class="search-holder">
+                <form action="" method="get">
+                    <input type="search" name="search" placeholder="Search for..">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </header>
 
-    <header class="main-header">
-        <!--Logo hholderr-->
-        <div class="logo-holder">
-            <a href="#">
-                
-                <img src="img/" alt="Logo">
-            </a>
-        </div>
-        <!--Logo holder-->
-        <!--search holder-->
-        <div class="search-holder">
-            <form action="" method="get">
-                <input 
-                type="search"
-                name="search"
-                placeholder="Search for..">
-                <button type="submit">Search</button>
-            </form>
-        </div>
-        <!--search holder-->
-    </header>
-
-    <nav class="main-menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a>
-                <ul class="drop">
-                    <li><a href="#">Service one</a></li>
-                    <li><a href="#">Service two</a></li>
-                    <li><a href="#">Service three</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Product</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
-    <!--banner slider-->
-        <section class="banner-slider">
-
+        <!-- Main menu -->
+        <nav class="main-menu">
             <ul>
-                <li><img src="https://placehold.co/1000x350" alt="Place Holder Banner"></li>
-                <li><img src="https://placehold.co/1000x350" alt="Place Holder Banner"></li>
-                <li><img src="https://placehold.co/1000x350" alt="Place Holder Banner"></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a>
+                    <ul class="drop">
+                        <li><a href="#">Service one</a></li>
+                        <li><a href="#">Service two</a></li>
+                        <li><a href="#">Service three</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!-- Banner slider -->
+        <section class="banner-slider">
+            <ul id="adaptive">
+                <li><img src="https://placehold.co/1200x350" alt="Place Holder Banner"></li>
+                <li><img src="https://placehold.co/1200x350" alt="Place Holder Banner"></li>
+                <li><img src="https://placehold.co/1200x350" alt="Place Holder Banner"></li>
             </ul>
         </section>
-        <!--Content Holder-->
 
+        <!-- Content Holder -->
         <section class="content-holder">
             <main>
                 <h1>Main heading for site</h1>
@@ -68,46 +63,58 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ea tenetur exercitationem eius similique nostrum doloremque dolores repellendus quas, nobis veniam esse, reiciendis aliquid dignissimos sapiente iste. Nostrum, fugit eaque!</p>
                 <p>Itaque in dolor laborum labore, fugit aspernatur! Rerum possimus aliquid eveniet voluptates dolor, praesentium ut dolores excepturi voluptatum laudantium tenetur? Reiciendis quasi ipsa voluptatem magni assumenda eaque minima perspiciatis minus!</p>
                 <p>Fuga, officiis labore nam quibusdam laborum quis magnam at eligendi consequuntur repellat dolorem, ipsum porro dolores cumque mollitia praesentium corrupti, ut aliquam vel nisi facilis eveniet? Repudiandae soluta nobis beatae!</p>
-            
+
                 <aside class="sidebar">
                     <div class="widget">
-                        <h3>Follow US</h3>
+                        <h3>Follow Us</h3>
                         <ul>
                             <li><a href="#">Facebook</a></li>
                             <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Whatapp</a></li>
+                            <li><a href="#">WhatsApp</a></li>
                         </ul>
                     </div>
                 </aside>
             </main>
         </section>
+
+        <!-- Footer widget holder -->
         <section class="footer-widget-holder">
             <div class="footer-widget">
                 <a href="#"><img src="img/" alt="Logo Footer"></a>
                 <h3>Address</h3>
-                <Address>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id numquam aperiam ratione? Eaque quam, debitis, possimus molestiae exceptur.
-                </Address>
+                <address>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id numquam aperiam ratione? Eaque quam, debitis, possimus molestiae exceptur.</address>
             </div>
 
             <div class="footer-widget">
                 <h4>Sitemap</h4>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Service/a></li>
+                    <li><a href="#">Service</a></li> <!-- Corrected closing tag -->
                     <li><a href="#">Product</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </section>
+
+        <!-- Site footer -->
         <footer class="site-footer">
-            <p>
-                <small>Copyright &copy; 2025</small>
-            </p>
+            <p><small>Copyright &copy; 2025</small></p>
         </footer>
-    <!--Main header-->
     </div>
-    
+
+    <!-- jQuery and LightSlider scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#adaptive').lightSlider({
+                adaptiveHeight: true,
+                item: 1,
+                slideMargin: 0,
+                loop: true
+            });
+        });
+    </script>
 </body>
 </html>
