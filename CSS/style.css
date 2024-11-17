@@ -5,8 +5,8 @@
   font-optical-sizing: auto;
 }
 
-.body{
-    background-color: #E3E6E6;
+body{
+    background-color: #f4f5f5;
     margin: 0px;
 }
 
@@ -104,3 +104,51 @@ background-color: blue;
 .main-menu > ul > li:hover .drop{
 display: block;
 }
+
+.lSPager.lSpg {
+    margin-top: -25px !important;
+  }
+
+.content-holder{
+    display: flex;
+    justify-content: space-between;
+    background-color: #f4f5f5;
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px black;
+}
+
+.content-holder .content{
+    padding: 25px;
+    background-color: white;
+    width: 80%;
+}
+
+.content-holder .content h1 ~ h2{
+    font-size: 1em;
+    color: darkgrey;
+}
+
+.sidebar{
+    padding: 25px;
+    width: 20%;
+    background-color: #2D3277;
+}
+
+.sidebar .widget ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+.sidebar .widget h3{
+    color: white;
+}
+
+.sidebar .widget ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+.sidebar .widget ul > li > a:hover{
+    color: black;
+}
+
