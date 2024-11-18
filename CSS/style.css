@@ -305,4 +305,11 @@ display: block;
     #adaptive img{
         width: 100%;
     }
+    .content-holder{
+        flex-direction: column;
+    }
+    .content-holder .content,
+    .content-holder .sidebar{
+        width: auto;
+    }
 }
