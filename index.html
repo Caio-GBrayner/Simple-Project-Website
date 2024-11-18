@@ -31,6 +31,11 @@
 
         <!-- Main menu -->
         <nav class="main-menu">
+            <ul class="mobile-menu">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#" class="toggler">+</a></li>
+            </ul>
+
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a>
@@ -114,6 +119,12 @@
                 loop: true
             });
         });
+        $('.main-menu > ul:nth-of-type(2)').hide();
+
+        $('.toggler').click(function(){
+            $('.main-menu > ul:nth-of-type(2)').toggle();
+            $('.drop').css({'display': 'block', 'position': 'relative'})
+        })
     </script>
 </body>
 </html>

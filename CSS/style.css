@@ -11,7 +11,8 @@ body{
 }
 
 .container { 
-    width: 1200px; 
+    max-width: 1200px; 
+    width: 98%;
     height: auto; 
     margin: 10px auto; 
     background-color: #ffffff; 
@@ -274,4 +275,31 @@ display: block;
 .side-contact{
    display: contents;
    border: 1px solid gainsboro;
+}
+
+/*Mobile menu*/
+
+.mobile-menu{
+    display: none !important;
+}
+
+/*Responsive Web Desing*/
+@media screen and (max-width: 750px) {
+    .main-header{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .mobile-menu{
+        display: flex !important;
+        justify-content: space-between !important;
+    }
+    .main-menu > ul:nth-of-type(2){
+        flex-direction: column;
+        border-top: 1px solid gainsboro;
+    }
+    .drop > li > a{
+        display: block;
+        width: auto;
+    }
 }
