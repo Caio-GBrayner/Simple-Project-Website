@@ -151,4 +151,34 @@ display: block;
 .sidebar .widget ul > li > a:hover{
     color: black;
 }
+.footer-widget-holder{
+    display: flex;
+    background-color: #1f1e1e;
+    color: white;
+}
+.footer-widget{
+    padding: 25px;
+    font-size: small;
+}
+.footer-widget ul{
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.footer-widget ul > li > a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-widget ul > li > a:hover{
+    color: blue;
+}
+.site-footer{
+    background-color: black;
+    color: white;
+    padding: 25px;
+    text-align: center;
+
+}
 
