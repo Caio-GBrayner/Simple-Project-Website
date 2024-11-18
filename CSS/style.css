@@ -89,12 +89,14 @@ background-color: blue;
     top: 100%;
     left: 0%;
     display: none;
+    background-color: black;
+    z-index: 1000;
 }
 .drop > li > a{
     color: white;
     text-decoration: none;
     padding: 15px;
-    display: inline-block;
+    display: block;
     background-color: black;
     width: 100%;
 }
@@ -179,6 +181,36 @@ display: block;
     color: white;
     padding: 25px;
     text-align: center;
-
+}
+/*Services and Products*/
+.services-holder{
+    display: flex;
+    grid-template-columns: auto;
+}
+.service{
+    padding: 25px;
+    border: 1px solid gainsboro;
+}
+.service a{
+    text-decoration: none;
+    color: teal;
 }
 
+/*product*/
+.products-holder{
+    display: flex;
+    grid-template-columns: auto;
+}
+.product{
+    padding: 25px;
+    border: 1px solid gainsboro;
+}
+.product a{
+    text-decoration: none;
+    color: teal;
+}
+
+.product img{
+    width: 100%;
+    height: auto;
+}
