@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en-US" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site-Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main header -->
+        <header class="main-header">
+            <!-- Logo holder -->
+            <div class="logo-holder">
+                <a href="#">
+                    <img src="img/" alt="Logo">
+                </a>
+            </div>
+            <!-- Search holder -->
+            <div class="search-holder">
+                <form action="" method="get">
+                    <input type="search" name="search" placeholder="Search for..">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </header>
+
+        <!-- Main menu -->
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a>
+                    <ul class="drop">
+                        <li><a href="#">Service one</a></li>
+                        <li><a href="#">Service two</a></li>
+                        <li><a href="#">Service three</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Product</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+       <section class="about-holder">
+        <aside class="about-side-img">
+            <img src="https://placehold.co/600x315" alt="About Us img">
+        </aside>
+            <article class="about">               
+                <h1>About Us</h1>    
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam ex minima beatae quis ullam</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur provident ea dolores facilis quas cum doloremque, cumque sit quae, necessitatibus adipisci, ducimus architecto. Inventore praesentium quia distinctio vel tenetur ad.</p>
+                    <p>Quaerat unde, officiis sed quam nostrum asperiores. Rerum iusto maxime dolore suscipit dignissimos vero mollitia iure magni placeat neque, quos blanditiis itaque qui asperiores optio doloremque eum sunt? Commodi, porro.</p>
+                    <p>Exercitationem ab enim ratione illo amet fugit pariatur dolorum facere maxime quidem expedita, numquam ad temporibus eum maiores dolore! Totam quae laboriosam exercitationem asperiores qui est aspernatur dicta earum natus?</p>
+                
+            </article>
+       </section>
+        <!-- Footer widget holder -->
+        <section class="footer-widget-holder">
+            <div class="footer-widget">
+                <a href="#"><img src="img/" alt="Logo Footer"></a>
+                <h3>Address</h3>
+                <address>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id numquam aperiam ratione? Eaque quam, debitis, possimus molestiae exceptur.</address>
+            </div>
+
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service</a></li> <!-- Corrected closing tag -->
+                    <li><a href="#">Product</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <p><small>Copyright &copy; 2025</small></p>
+        </footer>
+    </div>
+
+    <!-- jQuery and LightSlider scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#adaptive').lightSlider({
+                adaptiveHeight: true,
+                item: 1,
+                slideMargin: 0,
+                loop: true
+            });
+        });
+    </script>
+</body>
+</html>
